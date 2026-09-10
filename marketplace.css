@@ -231,9 +231,6 @@ nav {
     display: flex;
     justify-content: center;
     margin-top: 20px;
-    background-color: var(--line);
-    border-radius: 8px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.473);
   }
   .btn-marketplace {
     display: inline-block;
@@ -264,7 +261,36 @@ nav {
   justify-content: center;
   margin: 50px 0 50px;
 }
+.scroll-hint {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  margin: 20px 0;
+}
 
+.scroll-hint-text {
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+  font-weight: 500;
+}
+
+.scroll-hint-arrow {
+  font-size: 1.4rem;
+  color: var(--ink-soft);
+  animation: bounce-down 1.4s infinite;
+}
+
+@keyframes bounce-down {
+  0%, 100% {
+    transform: translateY(0);
+    opacity: 0.6;
+  }
+  50% {
+    transform: translateY(8px);
+    opacity: 1;
+  }
+}
 .btn-marketplace {
   display: inline-block;
   font-size: 16px;
@@ -278,7 +304,7 @@ nav {
   transition:
     background-color 0.3s ease,
     transform 0.2s ease;
-    delay: 0.5s ease-in-out;
+    transition-delay: 0.5s ease-in-out;
 }
 .btn-marketplace:hover {
   transform: scale(0.96);
@@ -305,10 +331,10 @@ nav {
   padding: 0.85rem 1.8rem;
   border-radius: 999px;
 
-  color: var(--ink-soft);
-  background: #0a0631;
+  color: var(--ink);
+  background: var(--paper);
 
-  border: 1px solid var(--accent);
+  border: 1px solid var(--gold);
 
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
@@ -320,8 +346,8 @@ nav {
   text-decoration: none;
 
   box-shadow:
-    0 0 10px rgba(212, 175, 55, 0.55),
-    0 4px 18px rgba(0, 0, 0, 0.35);
+    0 0 10px rgba(212, 175, 55, 0.733),
+    0 4px 18px rgba(0, 0, 0, 0.705);
 
   animation: floatBtn 2.6s ease-in-out infinite;
 }
