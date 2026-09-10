@@ -254,8 +254,6 @@ nav {
   border-radius: 999px;
 
   color: var(--ink);
-  background: var(--paper);
-
   border: 1px solid var(--gold);
 
   backdrop-filter: blur(6px);
@@ -279,7 +277,6 @@ nav {
   flex-shrink: 0;
 }
 
-
 /* =========================
    ANIMASI TOMBOL
 ========================= */
@@ -290,7 +287,7 @@ nav {
     transform: translateY(0);
 
     box-shadow:
-      0 0 10px rgba(212, 175, 55, .35),
+      0 0 10px rgba(212, 175, 55, 0.35),
       0 4px 18px rgba(0, 0, 0, 0.35);
   }
 
@@ -302,7 +299,6 @@ nav {
       0 8px 22px rgba(0, 0, 0, 0.4);
   }
 }
-
 
 .footer {
   padding: 30px 20px;
