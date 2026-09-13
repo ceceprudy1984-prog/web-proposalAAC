@@ -319,7 +319,7 @@ nav {
   font-size: 14px;
   letter-spacing: 4px;
   text-transform: uppercase;
-  color: var(--ink-soft);
+  color: var(--ink);
 }
 
 .intro-content h2 {
