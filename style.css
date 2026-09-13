@@ -298,7 +298,7 @@ nav {
 #intro {
   position: fixed;
   inset: 0;
-  background: beige;
+  background: var(--paper);
   z-index: 9999;
 
   display: flex;
@@ -356,5 +356,4 @@ nav {
 }
 
 .footer p {
-  margin: 0;
-}
+  ma

@@ -202,7 +202,7 @@ nav {
   letter-spacing: -0.3px;
   margin: 20px 0 20px; /*  DIUBAH: margin bawah diubah agar lebih seimbang */
 }
-h3 {
+h2, h3 {
   font-family: "Fraunces", serif;
   font-weight: 500;
   font-size: clamp(20px, 4vw, 28px);
