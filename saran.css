@@ -188,7 +188,7 @@ nav {
   width: 100%;
 }
 .hero h1 {
-  color: var(--accent);
+  color: var(--ink);
   text-decoration: underline;
   font-family: "Fraunces", serif;
   font-weight: 500;
