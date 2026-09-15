@@ -4,7 +4,7 @@
   --ink-soft: #59564f;
   --line: #e5e0d4;
   --accent: #111c5a;
-  --gold: rgb(212, 166, 80);
+  --gold: rgba(172, 132, 57, 0.979);
 }
 * {
   margin: 0;
@@ -48,7 +48,7 @@ nav {
   font-family: "Fraunces", serif;
   font-size: clamp(20px, 2.5vw, 24px);
   font-weight: 800;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.719);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
   letter-spacing: 0.2px;
   color: var(--ink);
   text-decoration: none;
@@ -172,23 +172,13 @@ nav {
   max-width: 100%; /*  DIUBAH: agar gambar mengecil otomatis di HP */
   height: auto;
   margin-bottom: 200px; /*  DIUBAH: hapus margin luar agar seimbang */
-  background-color: black;
-  border-radius: 12px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.685);
-}
-.analogi {
-  max-width: 100%; 
-  height: auto;
-  margin-bottom: 200px; 
-  background-color: black;
-  border-radius: 12px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.685);
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.747);
 }
 .hero-content {
   width: 100%;
 }
 .hero h1 {
-  color: var(--ink);
   font-family: "Fraunces", serif;
   font-weight: 500;
   font-size: clamp(
@@ -196,11 +186,16 @@ nav {
     8vw,
     50px
   ); /*  DIUBAH: Membalik urutan clamp() agar valid (min, preferred, max) */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.527); /*  DIUBAH: shadow 100% hitam pekat biasanya terlalu kaku, diturunkan ke 0.3 */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /*  DIUBAH: shadow 100% hitam pekat biasanya terlalu kaku, diturunkan ke 0.3 */
   line-height: 1.25;
   letter-spacing: -0.3px;
   margin: 20px 0 20px; /*  DIUBAH: margin bawah diubah agar lebih seimbang */
 }
+.hero h1 span {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
 .hero sub {
   font-size: 16px;
   color: var(--ink);
@@ -208,25 +203,10 @@ nav {
   max-width: 520px;
   margin: 0 auto;
 }
-h2, h3 {
-  color: var(--accent);
-  font-family: "Fraunces", serif;
-  font-weight: 500;
-  font-size: clamp(20px, 4vw, 28px);
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.445);
-  line-height: 1.25;
-  letter-spacing: -0.3px;
-  margin: 20px 0 20px;
-}
 .highlight {
-  color: var(--ink);
-  font-family: "Fraunces", serif;
-  font-weight: 500;
-  font-size: clamp(20px, 4vw, 28px);
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.445);
-  line-height: 1.25;
-  letter-spacing: -0.3px;
-  margin: 50px 20px 20px;
+  font-weight: 600;
+  color: orangered;
+  text-decoration: underline;
 }
 /* ===== MEDIA QUERIES ===== */
 @media (max-width: 440px) {
@@ -247,11 +227,8 @@ h2, h3 {
     width: 100%; /*  DIUBAH: dari 100vw menjadi 100% */
   }
   .hero-logo {
-    margin-left: 0;
+    margin-left: 0; /*  DIUBAH: hapus margin kiri di layar HP */
     margin-bottom: 20px;
-  }
-  .analogi {
-    margin: 50px 0 20px;
   }
 }
 
