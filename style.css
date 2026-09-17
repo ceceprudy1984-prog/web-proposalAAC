@@ -203,7 +203,7 @@ nav {
   text-align: center;
   font-size: 13.5px;
   color: var(--ink-soft);
-  border: 1px solid var(--line);
+  border-style: dashed;
   padding: 16px 20px;
 }
 
