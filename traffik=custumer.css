@@ -171,7 +171,7 @@ nav {
 .hero-logo {
   max-width: 100%; /*  DIUBAH: agar gambar mengecil otomatis di HP */
   height: auto;
-  margin-bottom: 200px; /*  DIUBAH: hapus margin luar agar seimbang */
+  margin: 50px 0 20px;
   border-radius: 10px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.747);
 }

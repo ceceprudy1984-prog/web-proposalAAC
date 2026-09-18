@@ -171,7 +171,7 @@ nav {
 .hero-logo {
   max-width: 100%; /*  DIUBAH: agar gambar mengecil otomatis di HP */
   height: auto;
-  margin: 50px 0 20px;
+  margin-bottom: 200px; /*  DIUBAH: hapus margin luar agar seimbang */
   background-color: black;
   border-radius: 12px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.685);
@@ -187,7 +187,7 @@ nav {
 .hero-content {
   width: 100%;
 }
-.hero h1 {
+ h1 {
   color: var(--ink);
   font-family: "Fraunces", serif;
   font-weight: 500;
@@ -199,7 +199,7 @@ nav {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.527); /*  DIUBAH: shadow 100% hitam pekat biasanya terlalu kaku, diturunkan ke 0.3 */
   line-height: 1.25;
   letter-spacing: -0.3px;
-  margin: 20px 0 20px; /*  DIUBAH: margin bawah diubah agar lebih seimbang */
+  margin: 0px 0 20px; /*  DIUBAH: margin bawah diubah agar lebih seimbang */
 }
 .hero sub {
   font-size: 16px;
