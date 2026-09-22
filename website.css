@@ -171,7 +171,7 @@ nav {
 .hero-logo {
   max-width: 100%; /*  DIUBAH: agar gambar mengecil otomatis di HP */
   height: auto;
-  margin-bottom: 200px; /*  DIUBAH: hapus margin luar agar seimbang */
+  margin: 50px 20px 0; /*  DIUBAH: hapus margin luar agar seimbang */
   background-color: black;
   border-radius: 12px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.685);
@@ -208,6 +208,12 @@ nav {
   max-width: 520px;
   margin: 0 auto;
 }
+.list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.7;
+}
 h2, h3 {
   color: var(--accent);
   font-family: "Fraunces", serif;
@@ -228,6 +234,16 @@ h2, h3 {
   letter-spacing: -0.3px;
   margin: 50px 20px 20px;
 }
+.note {
+  max-width: 440px;
+  margin: 0 auto 60px;
+  text-align: center;
+  font-size: 13.5px;
+  color: var(--ink-soft);
+  border-style: dashed;
+  padding: 16px 20px;
+}
+
 /* ===== MEDIA QUERIES ===== */
 @media (max-width: 440px) {
   .nav-links {
